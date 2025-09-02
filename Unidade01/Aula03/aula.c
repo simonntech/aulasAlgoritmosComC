@@ -1,7 +1,14 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
+#define varconst 100;
+
+int main()
 {
-    /* code */
+    int x;
+    float c = 20.9;
+    x = varconst;
+    
+    printf("Constante = %d, variável %f", x, c);
+
     return 0;
 }
