@@ -5,13 +5,13 @@ int main() {
     int n1, n2, n3;
 
     printf("Primeiro número: ");
-    scanf("%d", n1);
+    scanf("%d", &n1);
 
     printf("Segundo número: ");
-    scanf("%d", n2);
+    scanf("%d", &n2);
 
     printf("Terceiro número: ");
-    scanf("%d", n3);
+    scanf("%d", &n3);
 
     float soma1 = n1 + n2 ;
     float soma2 = n2 + n3 ;
@@ -34,11 +34,11 @@ int main() {
     }
 
     if (n2 < n3) {
-        printf("O segundo número: %d é menor que o terceiro número: $d", n2, n3);
+        printf("O segundo número: %d é menor que o terceiro número: %d", n2, n3);
     }
 
     
-    if ((n1 > 0) && (n2 % 2)) {
+    if ((n1 > 0) && (n2 % 2 == 0)) {
         printf("Atendeu o requisito do primeiro número ser positivo, e o segundo ser par!");
     }
 
