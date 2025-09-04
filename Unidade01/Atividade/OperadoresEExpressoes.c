@@ -33,6 +33,21 @@ int main() {
     printf("%d + %d = %.f\n", n1, n2, soma1);
     printf("%d + %d = %.f\n", n2, n3, soma2);
     printf("%d + %d = %.f\n\n", n1, n3, soma3);
+    
+    printf("Resultado das subtracoes: \n");
+    printf("%d - %d = %.f\n", n1, n2, sub1);
+    printf("%d - %d = %.f\n", n2, n3, sub2);
+    printf("%d - %d = %.f\n\n", n1, n3, sub3);
+    
+    printf("Resultado das multiplicacoes: \n");
+    printf("%d * %d = %.f\n", n1, n2, mult1);
+    printf("%d * %d = %.f\n", n2, n3, mult2);
+    printf("%d * %d = %.f\n\n", n1, n3, mult3);
+    
+    printf("Resultado das divisoes: \n");
+    printf("%d / %d = %.2f\n", n1, n2, div1);
+    printf("%d / %d = %.2f\n", n2, n3, div2);
+    printf("%d / %d = %.2f\n\n", n1, n3, div3);
 
     if (n1 > n2) {
         printf("O primeiro numero: %d e maior que o segundo: %d\n\n", n1, n2);
