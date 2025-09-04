@@ -2,9 +2,10 @@
 
 int main()
 {
+    char name;
     int x;
-    scanf("%d", &x);
-    printf("Hello world! x =%d", x);
+    scanf("%c", &name);
+    printf("Hello %c", name);
 
     return 0;
 }
