@@ -37,5 +37,10 @@ int main() {
         printf("O segundo número: %d é menor que o terceiro número: $d", n2, n3);
     }
 
+    
+    if ((n1 > 0) && (n2 % 2)) {
+        printf("Atendeu o requisito do primeiro número ser positivo, e o segundo ser par!");
+    }
+
     return 0;
 }
