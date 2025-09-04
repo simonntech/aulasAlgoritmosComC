@@ -4,13 +4,13 @@ int main() {
 
     int n1, n2, n3;
 
-    printf("Primeiro número: ");
+    printf("Primeiro numero: ");
     scanf("%d", &n1);
 
-    printf("Segundo número: ");
+    printf("Segundo numero: ");
     scanf("%d", &n2);
 
-    printf("Terceiro número: ");
+    printf("Terceiro numero: ");
     scanf("%d", &n3);
 
     float soma1 = n1 + n2 ;
@@ -29,17 +29,22 @@ int main() {
     float div2 = n2 / n3;
     float div3 = n1 / n3;
 
+    printf("Resultado das somas: \n");
+    printf("%d + %d = %.f\n", n1, n2, soma1);
+    printf("%d + %d = %.f\n", n2, n3, soma2);
+    printf("%d + %d = %.f\n\n", n1, n3, soma3);
+
     if (n1 > n2) {
-        printf("O primeiro número: %d é maior que o segundo: %d", n1, n2);
+        printf("O primeiro numero: %d e maior que o segundo: %d\n\n", n1, n2);
     }
 
     if (n2 < n3) {
-        printf("O segundo número: %d é menor que o terceiro número: %d", n2, n3);
+        printf("O segundo numero: %d é menor que o terceiro numero: %d\n\n", n2, n3);
     }
 
     
     if ((n1 > 0) && (n2 % 2 == 0)) {
-        printf("Atendeu o requisito do primeiro número ser positivo, e o segundo ser par!");
+        printf("Atendeu o requisito do primeiro numero ser positivo, e o segundo ser par!");
     }
 
     return 0;
