@@ -8,7 +8,7 @@ int main() {
         printf("\nDigite uma operacao:");
         printf("\n 1.Deposito");
         printf("\n 2.Saque");
-        printf("\n 3.Saque");
+        printf("\n 3.Saldo");
         printf("\n 4.Sair");
         printf("\n Escolha opcao:");
         scanf("%d", &opcao);
@@ -23,7 +23,7 @@ int main() {
                 printf("\n Valor do Saque: R$");
                 scanf("%f", &valor);
                 if (valor < soma) 
-                    printf("Saldo insuficiente, Saldo Atual: R$ %.2f\n", &soma);
+                    printf("Saldo insuficiente, Saldo Atual: R$ %.2f\n", soma);
                 soma = soma - valor;
                 break;
             case 3:
