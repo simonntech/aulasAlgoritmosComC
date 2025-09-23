@@ -22,6 +22,25 @@ int main() {
 
 
     // Calcular o IR
-    
+    if (salario <= 1903.98)
+        ir = salario * 0;
+    else if (salario >= 1903.99 && salario <= 2826.65)
+        ir = salario * 0.075;
+    else if (salario >= 2826.66 && salario <= 3751.05)
+        ir = salario * 0.15;
+    else if (salario >= 3751.06 && salario <= 4664.68)
+        ir = salario * 0.225;
+    else if (salario > 4664.69)
+        ir = salario * 0.275;
+
+    // Calcular Salário Líquido
+    sal_liquido = (salario-inss) - ir;
+
+    // Resultados
+    printf("\nDesconto do INSS : %.2f\n\n", inss);
+    printf("Desconto do imposto de renda : %.2f\n\n", ir);
+    printf("Salario liquido: %.2f\n\n", sal_liquido);
+
+    return 0;
 
 }
