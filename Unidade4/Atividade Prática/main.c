@@ -25,7 +25,16 @@ int main(){
     printf("\nQuantidade de horas trabalhadas: ");
     scanf("%d", qnt_horas);
 
-    
+    salario_bruto = calcular_salario_bruto(valor_hora, qnt_horas);
+    desconto = calcular_desconto(salario_bruto);
+    salario_liquido = calcular_salario_liquido(salario_bruto, desconto);
+
+    printf("---- RESULTADOS:\n\n");
+    printf("Valor da hora trabalhada: R$%.2f\n", valor_hora);
+    printf("Horas trabalhadas: %d", qnt_horas);
+    printf("Salario bruto total: R$%.2f\n", salario_bruto);
+    printf("Valor do desconto com 9% = R$%.2f\n", desconto);
+    printf("Total salario liquido a receber: R$%.2f\n", salario_liquido);
 
     return 0;
 }
