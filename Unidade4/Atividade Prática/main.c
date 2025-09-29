@@ -6,7 +6,7 @@ float calcular_salario_bruto(float valor_hora, int qnt_horas){
 }
 
 float calcular_desconto(float salario_bruto){
-    float desconto = salario_bruto - (salario_bruto * 0.09);
+    float desconto = (9 * salario_bruto)/100;
     return desconto;
 }
 
@@ -21,9 +21,9 @@ int main(){
 
     printf("----- Calculo de Salario ------\n\n");
     printf("\nValor da Hora Trabalhada R$ ");
-    scanf("%f", valor_hora);
+    scanf("%f", &valor_hora);
     printf("\nQuantidade de horas trabalhadas: ");
-    scanf("%d", qnt_horas);
+    scanf("%d", &qnt_horas);
 
     salario_bruto = calcular_salario_bruto(valor_hora, qnt_horas);
     desconto = calcular_desconto(salario_bruto);
@@ -31,9 +31,9 @@ int main(){
 
     printf("---- RESULTADOS:\n\n");
     printf("Valor da hora trabalhada: R$%.2f\n", valor_hora);
-    printf("Horas trabalhadas: %d", qnt_horas);
+    printf("Horas trabalhadas: %d\n", qnt_horas);
     printf("Salario bruto total: R$%.2f\n", salario_bruto);
-    printf("Valor do desconto com 9% = R$%.2f\n", desconto);
+    printf("Valor do desconto : R$%.2f\n", desconto);
     printf("Total salario liquido a receber: R$%.2f\n", salario_liquido);
 
     return 0;
