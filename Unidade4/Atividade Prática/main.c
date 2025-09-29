@@ -14,3 +14,18 @@ float calcular_salario_liquido(float salario_bruto, float desconto){
     float salario_liquido = salario_bruto - desconto;
     return salario_liquido;
 }
+
+int main(){
+    float valor_hora, salario_bruto, desconto, salario_liquido;
+    int qnt_horas;
+
+    printf("----- Calculo de Salario ------\n\n");
+    printf("\nValor da Hora Trabalhada R$ ");
+    scanf("%f", valor_hora);
+    printf("\nQuantidade de horas trabalhadas: ");
+    scanf("%d", qnt_horas);
+
+    
+
+    return 0;
+}
